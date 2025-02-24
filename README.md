@@ -2,7 +2,8 @@
 This github repository contains console paint App created for Lab Work by Mahiliavets Dzianis form group 353505. 
 ## UI description
 Basic UI includes canvas in frame and command line, where user can input commands, that will take some effect. Example you can seee bellow
-\|__________________________________________  |
+```
+|__________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -16,7 +17,8 @@ Basic UI includes canvas in frame and command line, where user can input command
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
+```
 Input your command: ...
 
 ## Functions
@@ -30,7 +32,7 @@ Initial position for triangle is its upper vertex (triangle is facing up), for c
 Examples of using add command:
 **add circle 7 6 - 5** 
 ```
-\|__________________________________________  |
+|___________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h - h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -44,11 +46,11 @@ Examples of using add command:
 | h h h h h h - h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
 ```
 **add rectangle 3 3 ) 7 2**
 ```
-\|__________________________________________  |
+|___________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -62,11 +64,11 @@ Examples of using add command:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
 ```
 **add triangle 8 3 . 7**
 ```
-\|__________________________________________  |
+|___________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -80,7 +82,7 @@ Examples of using add command:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
 ```
 # ls
 Lists all figures currently presented on canvas and its ids.
@@ -108,7 +110,7 @@ Example use:
 Fills figure with provided id with provided color.
 Example use:
 ```
-\|__________________________________________  |
+|___________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -122,13 +124,13 @@ Example use:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
 ```
 **ls**
 1 triangle_7
 **fill 1 O**
 ```
-\|__________________________________________  |
+|___________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -142,14 +144,14 @@ Example use:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
 ```
 
 # move [figure_id] [delta_x] [delta_y]
 Moves figure with provided id on the given delta (delta_x and delta_y can be negative)
 Example:
 ```
-\|__________________________________________  |
+|___________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -163,11 +165,11 @@ Example:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
 ```
 **move 1 5 0**
 ```
-\|__________________________________________  |
+|___________________________________________________________________|
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
@@ -181,7 +183,7 @@ Example:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-\|___________________________________________|
+|___________________________________________________________________|
 ```
 # undo
 Canceles the result of the last action (moving, filling, deleting or creating figure). Can be done after another undo or sequences of them, than it will cancel corresponding action. If no actions were taken, then this command will do nothing. Can be performed after loading canvas from file.
@@ -191,7 +193,8 @@ Cancels the last undo command, if no actions were done in between, otherwise doe
 Saves current state of canvas and actions to files, if provided path is valid. Otherwise creates file by given path and saves state there.
 # load [file_path]
 Loads canvas from file.
-
+# quit
+Quits from program
 ## UML Diagramm
 On the picture bellow you can see UML Diagramm of all classes used in programm.
 ![](Paint-UML.png)
