@@ -15,8 +15,8 @@ Basic UI includes canvas in frame and command line, where user can input command
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 Input your command: ...
@@ -36,16 +36,16 @@ Examples of using add command:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h - h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h - - - - - h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h - - - - - - - h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h - - - - - - - h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h - - - - - - - - - h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h - - - - - - - h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h - - - - - - - h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h - - - - - h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h - h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h - - - - - h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h - - - - - - - h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h - - - - - - - h h h h h h h h h h h h h h h h h h h h h h h |
+| h h - - - - - - - - - h h h h h h h h h h h h h h h h h h h h h h |
+| h h h - - - - - - - h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h - - - - - - - h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h - - - - - h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h - h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 **add rectangle 3 3 ) 7 2**
@@ -62,8 +62,8 @@ Examples of using add command:
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 **add triangle 8 3 . 7**
@@ -80,8 +80,8 @@ Examples of using add command:
 | h h h . . . . . . . . . . . h h h h h h h h h h h h h h h h h h h |
 | h h . . . . . . . . . . . . . h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 # ls
@@ -122,8 +122,8 @@ Example use:
 | h h h . . . . . . . . . . . h h h h h h h h h h h h h h h h h h h |
 | h h . . . . . . . . . . . . . h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 **ls**
@@ -142,8 +142,8 @@ Example use:
 | h h h O O O O O O O O O O O h h h h h h h h h h h h h h h h h h h |
 | h h O O O O O O O O O O O O O h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 
@@ -163,8 +163,8 @@ Example:
 | h h h . . . . . . . . . . . h h h h h h h h h h h h h h h h h h h |
 | h h . . . . . . . . . . . . . h h h h h h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 **move 1 5 0**
@@ -181,8 +181,8 @@ Example:
 | h h h h h h h h . . . . . . . . . . . h h h h h h h h h h h h h h |
 | h h h h h h h . . . . . . . . . . . . . h h h h h h h h h h h h h |
 | h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
-| h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
+| h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h |
 |___________________________________________________________________|
 ```
 # undo
