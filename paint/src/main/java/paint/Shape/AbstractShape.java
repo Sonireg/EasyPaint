@@ -7,7 +7,7 @@ public abstract class AbstractShape {
         isVisible = newVisibylityState;
     }
     protected Vector2 position;
-    protected char color;
+    protected Character color;
     protected int id;
     protected boolean isVisible = true;
 }

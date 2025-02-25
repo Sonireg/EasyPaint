@@ -1,15 +1,19 @@
 package paint.ControlElements;
 import paint.Shape.AbstractShape;
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class Canvas {
     
-    public void SetElement(int x, int y, char color){
-
+    public void SetElement(int x, int y, Character color){
+        field.get(x).set(y, color);
     }
 
-    public void FillBackground(){
-
+    public void FillBackground() {
+        for (ArrayList<Character> line : field) {
+            for (Character element : line) {
+                element = background;
+            }
+        }
     }
 
     public int GetWidth() {
@@ -21,15 +25,16 @@ public class Canvas {
     }
 
     public void Redraw() {
-        
+        FillBackground();
+        for (AbstractShape shape : figures) {
+            shape.draw(this);
+        }
     }
 
 
-
-
-    private Vector<AbstractShape> figures;
-    private char[][] field;
-    private int height;
-    private int width;
-    private char background;
+    private ArrayList<AbstractShape> figures;
+    private ArrayList<ArrayList<Character>> field;
+    private int height = 25;
+    private int width = 80;
+    private Character background;
 }

@@ -1,9 +1,13 @@
 package paint.ControlElements;
 import paint.ControlElements.CommandManager;
-public class InputManager {
-    
-    
-    
-    private CommandManager commandManager;
+import paint.ControlElements.FileManager;
 
+public class InputManager {
+
+    public InputHandlingStates HandleInput(String input) {
+        return InputHandlingStates.GOOD;
+    }
+
+
+    private CommandManager commandManager = new CommandManager();
 }

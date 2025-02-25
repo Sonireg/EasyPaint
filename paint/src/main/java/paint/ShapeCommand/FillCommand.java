@@ -7,6 +7,6 @@ public class FillCommand extends AbstractShapeCommand {
     @Override
     public void undoCommand() {
     }
-    private char newColor;
-    private char oldColor;
+    private Character newColor;
+    private Character oldColor;
 }
