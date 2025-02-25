@@ -4,31 +4,35 @@ import java.util.ArrayList;
 
 public class Canvas {
     
-    public void SetElement(int x, int y, Character color){
+    public void setElement(int x, int y, Character color){
         field.get(x).set(y, color);
     }
 
-    public void FillBackground() {
-        for (ArrayList<Character> line : field) {
-            for (Character element : line) {
-                element = background;
+    public void fillBackground() {
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                field.get(x).set(y, background);
             }
         }
     }
 
-    public int GetWidth() {
+    public int getWidth() {
         return width;
     }
 
-    public int GetHeight() {
+    public int getHeight() {
         return height;
     }
 
-    public void Redraw() {
-        FillBackground();
+    public void redraw() {
+        fillBackground();
         for (AbstractShape shape : figures) {
             shape.draw(this);
         }
+    }
+
+    public ArrayList<AbstractShape> getFigures() {
+        return figures;
     }
 
 

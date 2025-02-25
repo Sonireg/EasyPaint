@@ -6,6 +6,12 @@ public abstract class AbstractShape {
     public void setVisible(boolean newVisibylityState) {
         isVisible = newVisibylityState;
     }
+    public void setColor(Character newColor) {
+        color = newColor;
+    }
+    public void move(Vector2 moveVector) {
+        position.add(moveVector);
+    }
     protected Vector2 position;
     protected Character color;
     protected int id;
