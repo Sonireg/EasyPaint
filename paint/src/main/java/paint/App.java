@@ -70,6 +70,8 @@ public class App {
                 case INVALID_INDEX:
                     System.out.println("Invalid index");
                     break;
+                case GOOD:
+                    break;
                 default:
                     System.out.println("UNKNOWN ERROR");
                     break;

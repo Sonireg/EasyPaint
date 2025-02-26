@@ -46,8 +46,6 @@ public class Canvas {
 
     public void redraw() {
         fillBackground();
-        System.out.print("\033[H\033[2J");  
-        System.out.flush(); 
         for (AbstractShape shape : figures) {
             shape.draw(this);
         }
