@@ -22,6 +22,11 @@ public class AddComand extends AbstractShapeCommand {
     }
 
     @Override
+    public void undoUndoCommand() {
+        canvas.getFigures().get(figureID).setVisible(true);
+    }
+
+    @Override
     public String toString() {
         return "AddComand " + shape.toString() + " " + figureID.toString() + " ";
     }

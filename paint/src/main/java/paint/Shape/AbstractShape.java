@@ -7,8 +7,14 @@ public abstract class AbstractShape {
     public void setVisible(boolean newVisibylityState) {
         isVisible = newVisibylityState;
     }
+    public boolean isVisible() {
+        return isVisible;
+    }
     public void setColor(Character newColor) {
         color = newColor;
+    }
+    public Character getColor() {
+        return color;
     }
     public void move(Vector2 moveVector) {
         position.add(moveVector);

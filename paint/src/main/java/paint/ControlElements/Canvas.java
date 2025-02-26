@@ -34,6 +34,12 @@ public class Canvas {
         for (AbstractShape shape : figures) {
             shape.draw(this);
         }
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                System.out.print(field.get(x).get(y));
+            }
+            System.out.println();
+        }
     }
 
     public ArrayList<AbstractShape> getFigures() {

@@ -14,6 +14,9 @@ public class Rectangle extends AbstractShape {
     
     @Override
     public void draw(Canvas canvas) {
+        if (!isVisible) {
+            return;
+        }
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < length; j++) {
                 canvas.setElement(position.sumWith(new Vector2(i, j)), color);

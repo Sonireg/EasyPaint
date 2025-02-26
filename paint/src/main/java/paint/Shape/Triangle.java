@@ -11,6 +11,9 @@ public class Triangle extends AbstractShape {
 
     @Override
     public void draw(Canvas canvas) {
+        if (!isVisible) {
+            return;
+        }
         for (int i = 0; i < height; i++) {
             for (int j = -i; j <= i; ++j) {
                 canvas.setElement(position.sumWith(new Vector2(j, i)), color);

@@ -18,7 +18,7 @@ public class CommandManager {
 
     public void canceleLastCanceledCommand() {
         AbstractShapeCommand last_cancled_command = undoneCommands.pop();
-        last_cancled_command.doCommand();
+        last_cancled_command.undoUndoCommand();
         doneCommands.push(last_cancled_command);
     }
 
