@@ -26,7 +26,7 @@ public class Rectangle extends AbstractShape {
 
     @Override
     public String toString() {
-        return "rectangle " + position.toString() + color + " " + length.toString() + " " + width.toString() + " ";
+        return "rectangle " + position.toString() + color + " " + isVisible + " " + length.toString() + " " + width.toString() + " ";
     }
 
     private Integer length;

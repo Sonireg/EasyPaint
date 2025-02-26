@@ -64,6 +64,7 @@ public class FileManager {
             Vector2 position = new Vector2(inSaved.nextInt(), inSaved.nextInt());
             char color = inSaved.next().charAt(0);
             int id = inSaved.nextInt();
+            boolean isVisible = inSaved.nextBoolean();
 
             switch (type) {
                 case "circle":
@@ -79,6 +80,9 @@ public class FileManager {
                     int height = inSaved.nextInt();
                     shapes.add(new Triangle(position, color, id, height));
                     break;
+            }
+            if (!isVisible) {
+                shapes.getLast().setVisible(false);
             }
         }
         return shapes;

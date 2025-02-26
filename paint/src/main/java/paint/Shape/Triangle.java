@@ -23,7 +23,7 @@ public class Triangle extends AbstractShape {
 
     @Override
     public String toString() {
-        return "triangle " + position.toString() + color + " " + height.toString() + " ";
+        return "triangle " + position.toString() + color + " " + isVisible + " " + height.toString() + " ";
     }
 
     private Integer height;

@@ -29,7 +29,7 @@ public class Circle extends AbstractShape {
 
     @Override
     public String toString() {
-        return "circle " + position.toString() + color + " " + radiusSquare.toString() + " ";
+        return "circle " + position.toString() + color + " " + isVisible + " " + radiusSquare.toString() + " ";
     }
 
     private Integer radiusSquare;
