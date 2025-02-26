@@ -22,10 +22,14 @@ public class CommandManager {
         doneCommands.push(last_cancled_command);
     }
 
-    public void SetDoneCommands(Stack<AbstractShapeCommand> new_commands_stack) {
+    public void setDoneCommands(Stack<AbstractShapeCommand> new_commands_stack) {
+        undoneCommands.clear();
         doneCommands = new_commands_stack;
     }
 
+    public Stack<AbstractShapeCommand> getDoneCommands() {
+        return doneCommands;
+    }
 
     private Stack<AbstractShapeCommand> doneCommands;
     private Stack<AbstractShapeCommand> undoneCommands;

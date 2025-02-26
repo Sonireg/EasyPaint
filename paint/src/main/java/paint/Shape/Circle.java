@@ -14,5 +14,11 @@ public class Circle extends AbstractShape {
     @Override
     public void draw(Canvas canvas) {
     }
-    private int radius;
+
+    @Override
+    public String toString() {
+        return "circle " + radius.toString() + " ";
+    }
+
+    private Integer radius;
 }

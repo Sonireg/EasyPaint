@@ -3,5 +3,6 @@ package paint.ControlElements;
 public enum InputHandlingStates {
     GOOD,
     BAD,
-    QUIT
+    QUIT,
+    NO_FILE
 }

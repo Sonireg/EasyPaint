@@ -12,5 +12,11 @@ public class Triangle extends AbstractShape {
     @Override
     public void draw(Canvas canvas) {
     }
-    private int height;
+
+    @Override
+    public String toString() {
+        return "triangle " + height.toString() + " ";
+    }
+
+    private Integer height;
 }

@@ -15,6 +15,12 @@ public class Rectangle extends AbstractShape {
     @Override
     public void draw(Canvas canvas) {
     }
-    private int length;
-    private int width;
+
+    @Override
+    public String toString() {
+        return "rectangle " + length.toString() + " " + width.toString() + " ";
+    }
+
+    private Integer length;
+    private Integer width;
 }

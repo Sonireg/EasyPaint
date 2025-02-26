@@ -16,11 +16,11 @@ public class Canvas {
         }
     }
 
-    public int getWidth() {
+    public Integer getWidth() {
         return width;
     }
 
-    public int getHeight() {
+    public Integer getHeight() {
         return height;
     }
 
@@ -38,7 +38,7 @@ public class Canvas {
 
     private ArrayList<AbstractShape> figures;
     private ArrayList<ArrayList<Character>> field;
-    private int height = 25;
-    private int width = 80;
+    private Integer height = 25;
+    private Integer width = 80;
     private Character background;
 }
