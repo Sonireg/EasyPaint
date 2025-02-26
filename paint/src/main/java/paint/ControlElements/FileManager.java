@@ -21,7 +21,7 @@ public class FileManager {
     public static InputHandlingStates SaveAppState(String filePath, Canvas canvas, CommandManager commandManager) {
         PrintWriter out;
         try {
-            out = new PrintWriter(filePath);
+            out = new PrintWriter(filePath + ".save");
         }
         catch(FileNotFoundException e) {
             return InputHandlingStates.NO_FILE;
@@ -55,6 +55,7 @@ public class FileManager {
 
     private static ArrayList<AbstractShape> savedShapes(Scanner inSaved) {
         ArrayList<AbstractShape> shapes = new ArrayList<>();
+        int currID = 0;
         while (inSaved.hasNext()) {
             String type = inSaved.next();
             if (type.equals("END")) {
@@ -63,8 +64,9 @@ public class FileManager {
             
             Vector2 position = new Vector2(inSaved.nextInt(), inSaved.nextInt());
             char color = inSaved.next().charAt(0);
-            int id = inSaved.nextInt();
-            boolean isVisible = inSaved.nextBoolean();
+            int id = currID;
+            currID++;
+            boolean isVisible = (inSaved.next().charAt(0) == 't');
 
             switch (type) {
                 case "circle":

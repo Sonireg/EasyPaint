@@ -26,7 +26,7 @@ All available functions are listed in this paragraph
 # add [figure_name] [init_position] [color] [figure-params]
 Supported figures - equilateral triangle, circle, resctangle.
 All sizes are in amount of characters. Color is character (except space and all control characters), that will be used to fill figure. 
-Parameter for circle is radius, for triangle - height, for rectangle - width and height.
+Parameter for circle is radius squared, for triangle - height, for rectangle - width and height.
 Init position is two numbers, that determine initial position. The start of coordinats (0,0) is in upper left corner, first number is x coordinat, that grows from left to right, second y coordinat that grows from up to down.
 Initial position for triangle is its upper vertex (triangle is facing up), for circle is its center, for rectangle position of its upper left corner.
 Examples of using add command:
@@ -87,25 +87,42 @@ Examples of using add command:
 # ls
 Lists all figures currently presented on canvas and its ids.
 Example use:
+
 **ls**
-1 triangle_9
-2 triangle_3
-5 circle_7
-7 rectangle_5_2
+
+0: rectangle 50 12 h true 5 5
+
+1: rectangle 60 12 h true 5 5
+
+2: triangle 8 3 k true 7
+
+3: circle 30 10 o true 25
+
 
 # delete [figure_id]
 Deletes figure with provided id
 Example use:
+
 **ls**
-1 triangle_9
-2 triangle_3
-5 circle_7
-7 rectangle_5_2
-**delete 7**
+
+0: rectangle 50 12 h true 5 5
+
+1: rectangle 60 12 h true 5 5
+
+2: triangle 8 3 k true 7
+
+3: circle 30 10 o true 25
+
+**delete 3**
+
 **ls**
-1 triangle_9
-2 triangle_3
-5 circle_7
+
+0: rectangle 50 12 h true 5 5
+
+1: rectangle 60 12 h true 5 5
+
+2: triangle 8 3 k true 7
+
 # fill [figure_id] [color]
 Fills figure with provided id with provided color.
 Example use:
@@ -127,7 +144,9 @@ Example use:
 |___________________________________________________________________|
 ```
 **ls**
-1 triangle_7
+
+1: triangle 60 12 h true 5 5
+
 **fill 1 O**
 ```
 |___________________________________________________________________|
@@ -190,7 +209,7 @@ Canceles the result of the last action (moving, filling, deleting or creating fi
 # redo
 Cancels the last undo command, if no actions were done in between, otherwise does nothing. Can be performed after loading canvas from file.
 # save [file_path]
-Saves current state of canvas and actions to files, if provided path is valid. Otherwise creates file by given path and saves state there.
+Creates file by given path with .save extension and saves state there.
 # load [file_path]
 Loads canvas from file.
 # quit
