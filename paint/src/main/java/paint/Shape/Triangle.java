@@ -11,11 +11,16 @@ public class Triangle extends AbstractShape {
 
     @Override
     public void draw(Canvas canvas) {
+        for (int i = 0; i < height; i++) {
+            for (int j = -i; j <= i; ++j) {
+                canvas.setElement(position.sumWith(new Vector2(j, i)), color);
+            }
+        }
     }
 
     @Override
     public String toString() {
-        return "triangle " + height.toString() + " ";
+        return "triangle " + position.toString() + color + " " + height.toString() + " ";
     }
 
     private Integer height;

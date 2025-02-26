@@ -14,11 +14,16 @@ public class Rectangle extends AbstractShape {
     
     @Override
     public void draw(Canvas canvas) {
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < length; j++) {
+                canvas.setElement(position.sumWith(new Vector2(i, j)), color);
+            }
+        }
     }
 
     @Override
     public String toString() {
-        return "rectangle " + length.toString() + " " + width.toString() + " ";
+        return "rectangle " + position.toString() + color + " " + length.toString() + " " + width.toString() + " ";
     }
 
     private Integer length;

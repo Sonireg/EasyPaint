@@ -22,7 +22,7 @@ public class MoveCommand extends AbstractShapeCommand {
 
     @Override
     public String toString() {
-        return "MoveCommand " + figureID.toString() + " " + moveDirection.x.toString() + " " + moveDirection.y.toString() + " ";
+        return "MoveCommand " + figureID.toString() + " " + moveDirection.toString();
     }
 
     private Vector2 moveDirection;

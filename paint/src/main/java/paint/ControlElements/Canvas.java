@@ -1,11 +1,16 @@
 package paint.ControlElements;
 import paint.Shape.AbstractShape;
 import java.util.ArrayList;
+import paint.Shape.Vector2;
 
 public class Canvas {
     
-    public void setElement(int x, int y, Character color){
-        field.get(x).set(y, color);
+    public void setElement(Vector2 pos, Character color){
+        if (pos.x < 0 || pos.x >= width || pos.y < 0 || pos.y >= height) {
+            return;
+        }
+
+        field.get(pos.x).set(pos.y, color);
     }
 
     public void fillBackground() {
@@ -33,6 +38,10 @@ public class Canvas {
 
     public ArrayList<AbstractShape> getFigures() {
         return figures;
+    }
+
+    public void setFigures(ArrayList<AbstractShape> newFigures) {
+        figures = newFigures;
     }
 
 
