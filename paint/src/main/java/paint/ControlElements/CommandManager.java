@@ -31,6 +31,6 @@ public class CommandManager {
         return doneCommands;
     }
 
-    private Stack<AbstractShapeCommand> doneCommands;
-    private Stack<AbstractShapeCommand> undoneCommands;
+    private Stack<AbstractShapeCommand> doneCommands = new Stack<AbstractShapeCommand>();
+    private Stack<AbstractShapeCommand> undoneCommands = new Stack<AbstractShapeCommand>();
 }

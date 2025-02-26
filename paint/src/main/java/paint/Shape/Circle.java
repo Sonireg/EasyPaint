@@ -16,7 +16,15 @@ public class Circle extends AbstractShape {
         if (!isVisible) {
             return;
         }
-        dfsDraw(canvas, position);
+        int radius = (int) Math.sqrt(radiusSquare) + 1;
+        for (int i = -radius; i < radius; i++) {
+            for (int j = -radius; j < radius; j++) {
+                Vector2 currPos = position.sumWith(new Vector2(i, j));
+                if (currPos.SquareDistance(position) <= radiusSquare) {
+                    canvas.setElement(currPos, color);
+                }
+            }
+        }
     }
 
     @Override
@@ -25,21 +33,4 @@ public class Circle extends AbstractShape {
     }
 
     private Integer radiusSquare;
-
-    private void dfsDraw(Canvas canvas, Vector2 drawPos) {
-        canvas.setElement(drawPos, color);
-        Vector2[] neighbors = {
-            new Vector2(drawPos.x - 1, drawPos.y), 
-            new Vector2(drawPos.x + 1, drawPos.y), 
-            new Vector2(drawPos.x, drawPos.y - 1), 
-            new Vector2(drawPos.x, drawPos.y + 1)
-        };
-        for (var neighbor : neighbors) {
-            if (neighbor.SquareDistance(position) <= radiusSquare) {
-                canvas.setElement(neighbor, color);
-                dfsDraw(canvas, neighbor);
-            }
-        }
-    }
-
 }

@@ -14,7 +14,7 @@ public class App {
     private InputManager inputManager;
 
     public App() {
-        mainCanvas = new Canvas();
+        mainCanvas = new Canvas(25, 80, '.');
         commandManager = new CommandManager();
         inputManager = new InputManager(mainCanvas, commandManager);
     }

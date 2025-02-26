@@ -196,7 +196,6 @@ public class InputManager {
     }
 
     private boolean isValidColor(char color) {
-        // Valid characters are any non-space, non-control characters
         return !Character.isWhitespace(color) && !Character.isISOControl(color);
     }
 }
