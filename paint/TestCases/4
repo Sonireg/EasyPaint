@@ -1,0 +1,27 @@
+add triangle 8 8 o 10
+add rectangle 70 10 u 8 8 
+sef
+add wet
+add wet 1 1 1 1 1
+move 12 12
+move 12e 412 532
+undo
+redo
+add circle 40 12 i 6
+delete 0
+move 2 -15 0
+add triangle 15 15 - 7 
+ls
+add circle 30 12 i 6
+add rectangle 28 5 o 4 7
+ls     
+delete 5
+add rectangle 28 5 o 7 4 
+move 6 -3 0
+move 6 1 0  
+ls 
+add trinagle 27 2 p 3 
+add triangle 27 2 p 3 
+delete 7
+delete 4
+quit

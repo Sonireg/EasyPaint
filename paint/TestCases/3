@@ -1,0 +1,8 @@
+add rectangle 4 4 R 6 3
+add circle 12 12 C 4
+add triangle 6 6 T 5
+move 0 2 1
+move 1 -3 -2
+fill 2 Z
+ls
+quit
