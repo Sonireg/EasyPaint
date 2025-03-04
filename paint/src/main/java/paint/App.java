@@ -5,6 +5,7 @@ import paint.ControlElements.CommandManager;
 import paint.ControlElements.InputManager;
 import paint.ControlElements.InputHandlingStates;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -22,6 +23,7 @@ public class App {
     public void MainCycle() {
         Scanner scanner = new Scanner(System.in);
         mainCanvas.redraw();
+        outputCanvas();
         while (true) {
             System.out.print("Input your command: ");
             String input = scanner.nextLine();
@@ -72,11 +74,26 @@ public class App {
                     break;
                 case GOOD:
                     break;
+                case BAD_FIGURE_PARAMETRS:
+                    System.out.println("Bad figure parametrs");
+                    break;
                 default:
                     System.out.println("UNKNOWN ERROR");
                     break;
             }
             mainCanvas.redraw();
+            outputCanvas();
+        }
+    }
+
+    private void outputCanvas() {
+        ArrayList<ArrayList<Character>> field = mainCanvas.getField();
+        for (int y = 0; y < mainCanvas.getHeight(); y++) {
+            for (int x = 0; x < mainCanvas.getWidth(); x++) {
+                System.out.print(field.get(x).get(y));
+                System.out.print(' ');
+            }
+            System.out.println();
         }
     }
 

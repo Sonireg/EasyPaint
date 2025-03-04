@@ -79,8 +79,11 @@ public class FileManager {
                     shapes.add(new Rectangle(position, color, id, length, width));
                     break;
                 case "triangle":
-                    int height = inSaved.nextInt();
-                    shapes.add(new Triangle(position, color, id, height));
+                    int x1 = inSaved.nextInt();
+                    int y1 = inSaved.nextInt();
+                    int x2 = inSaved.nextInt();
+                    int y2 = inSaved.nextInt();
+                    shapes.add(new Triangle(position, color, id, new Vector2(x1, y1), new Vector2(x2, y2)));
                     break;
             }
             if (!isVisible) {

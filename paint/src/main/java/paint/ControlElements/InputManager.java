@@ -78,16 +78,36 @@ public class InputManager {
             switch (shapeType) {
                 case "circle":
                     int radius = Integer.parseInt(tokens[5]);
+                    if (radius <= 0) {
+                        return InputHandlingStates.BAD_FIGURE_PARAMETRS;
+                    }
                     shape = new Circle(new Vector2(x, y), color, id, radius);
                     break;
                 case "rectangle":
+                    if (tokens.length < 6) {
+                        return InputHandlingStates.TO_FEW_ARGUMENTS_FOR_ADD;
+                    }
                     int width = Integer.parseInt(tokens[5]);
                     int height = Integer.parseInt(tokens[6]);
+                    if (width <= 0 || height <= 0) {
+                        return InputHandlingStates.BAD_FIGURE_PARAMETRS;
+                    }
                     shape = new Rectangle(new Vector2(x, y), color, id, width, height);
                     break;
                 case "triangle":
-                    int triangleHeight = Integer.parseInt(tokens[5]);
-                    shape = new Triangle(new Vector2(x, y), color, id, triangleHeight);
+                    if (tokens.length < 7) {
+                        return InputHandlingStates.TO_FEW_ARGUMENTS_FOR_ADD;
+                    }
+                    int a = Integer.parseInt(tokens[5]);
+                    int b = Integer.parseInt(tokens[6]);
+                    int c = Integer.parseInt(tokens[7]);
+                    if (a + b < c || b + c < a || c + a < b || a <= 0 || b <= 0 || c <= 0) {
+                        return InputHandlingStates.BAD_FIGURE_PARAMETRS;
+                    }
+                    double p3x = 1. * (b * b - c * c + a * a) / (2 * a);
+                    int p3y = (int)Math.sqrt(b * b - p3x * p3x);
+                    shape = new Triangle(new Vector2(x, y), color, id, 
+                                         new Vector2(a + 1, 0), new Vector2((int)p3x, -p3y));
                     break;
                 default:
                     return InputHandlingStates.NON_EXISTING_FIGURE;

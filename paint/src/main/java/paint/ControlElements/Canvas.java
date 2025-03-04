@@ -50,13 +50,11 @@ public class Canvas {
             shape.draw(this);
         }
         
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
-                System.out.print(field.get(x).get(y));
-                System.out.print(' ');
-            }
-            System.out.println();
-        }
+        
+    }
+
+    public ArrayList<ArrayList<Character>> getField() {
+        return field;
     }
 
     public ArrayList<AbstractShape> getFigures() {
